@@ -5,6 +5,7 @@ public class InstallmentDTO extends AbstractDTO{
     private String note;
     private String duedate;
     private Long amount;
+    private String status;
 
     public String getCode() {
         return code;
@@ -36,5 +37,13 @@ public class InstallmentDTO extends AbstractDTO{
 
     public void setAmount(Long amount) {
         this.amount = amount;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

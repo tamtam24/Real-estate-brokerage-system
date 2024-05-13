@@ -3,7 +3,6 @@ package com.javaweb.entity;
 
 import javax.persistence.*;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -22,8 +21,8 @@ public class InstallmentEntity extends BaseEntity {
     @Column(name = "status")
     private String status;
 
-    @Column(name = "is_active")
-    private int is_active;
+    @Column(name = "active")
+    private int active;
 
     @Column(name = "amount")
     private Long amount;
@@ -76,12 +75,12 @@ public class InstallmentEntity extends BaseEntity {
         this.assignmentInstallmentEntityList = assignmentInstallmentEntityList;
     }
 
-    public int getIs_active() {
-        return is_active;
+    public int getActive() {
+        return active;
     }
 
-    public void setIs_active(int is_active) {
-        this.is_active = is_active;
+    public void setActive(int active) {
+        this.active = active;
     }
 
     public Long getAmount() {

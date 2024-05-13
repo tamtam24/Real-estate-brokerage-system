@@ -1,10 +1,12 @@
 package com.javaweb.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -75,4 +77,31 @@ public class BaseEntity implements Serializable {
     public void setModifiedBy(String modifiedBy) {
         this.modifiedBy = modifiedBy;
     }
+
+    @PrePersist
+    protected void onPrePersist() {
+        if (this.modifiedBy != null) {
+            this.modifiedBy = null;
+            System.out.println("oke");
+        }
+        if (this.modifiedDate != null) {
+            this.modifiedDate = null;
+            System.out.println("oke");
+        }
+    }
+
+    @PreUpdate
+    protected void onPreUpdate() {
+        if (this.modifiedBy == null) {
+            this.modifiedBy = null;
+        }
+    }
+//    @PreUpdate
+//    protected void onUpdate() {
+//        this.modifiedBy = null;
+//        // You may add logic to set modifiedBy here if needed
+//    }
+
 }
+
+

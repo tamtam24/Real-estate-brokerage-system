@@ -39,7 +39,6 @@ public class CustomerEntity extends BaseEntity{
     @Column(name = "is_active")
     private int is_active;
 
-
 //    @OneToMany(mappedBy="customers", fetch = FetchType.LAZY)
 //    private List<AssignmentCustomerEntity> assignmntCustomersEntities = new ArrayList<>();
 

@@ -1,6 +1,7 @@
 package com.javaweb.api.admin;
 
 
+import com.javaweb.entity.TransactionEntity;
 import com.javaweb.model.dto.*;
 import com.javaweb.model.response.ResponseDTO;
 import com.javaweb.model.response.TransactionResponseDTO;
@@ -10,6 +11,7 @@ import com.javaweb.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.persistence.PreUpdate;
 import java.util.List;
 
 @RestController(value ="customerAPIOfAdmin")
@@ -73,6 +75,8 @@ public class CustomerAPI {
 
 
     }
+
+
     @GetMapping("/{customerId}/transaction/{id}")
     public TransactionResponseDTO loadTransaction (@PathVariable Long customerId, @PathVariable Long id){
         TransactionResponseDTO result = ITransactionService.loadTransaction(id,customerId);
