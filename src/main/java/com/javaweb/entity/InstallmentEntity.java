@@ -21,8 +21,8 @@ public class InstallmentEntity extends BaseEntity {
     @Column(name = "status")
     private String status;
 
-    @Column(name = "active")
-    private int active;
+    @Column(name = "is_active")
+    private int is_active;
 
     @Column(name = "amount")
     private Long amount;
@@ -75,12 +75,12 @@ public class InstallmentEntity extends BaseEntity {
         this.assignmentInstallmentEntityList = assignmentInstallmentEntityList;
     }
 
-    public int getActive() {
-        return active;
+    public int getIs_active() {
+        return is_active;
     }
 
-    public void setActive(int active) {
-        this.active = active;
+    public void setIs_active(int is_active) {
+        this.is_active = is_active;
     }
 
     public Long getAmount() {

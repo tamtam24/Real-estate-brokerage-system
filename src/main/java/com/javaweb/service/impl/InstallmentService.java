@@ -32,7 +32,7 @@ public class InstallmentService implements IInstallmentService {
             installmentEntity = installmentRepository.findById(installmentDTO.getId()).get();
             updatedOrNewInstallment.setAssignmentInstallmentEntityList(installmentEntity.getAssignmentInstallmentEntityList());
         }
-        updatedOrNewInstallment.setActive(1);
+        updatedOrNewInstallment.setIs_active(1);
         installmentRepository.save(updatedOrNewInstallment);
         System.out.println("addorupdate oke");
 
@@ -43,14 +43,14 @@ public class InstallmentService implements IInstallmentService {
     public void deleteInstallment(List<Long> ids){
         for(Long id : ids){
             InstallmentEntity installmentEntity = installmentRepository.findById(id).get();
-            installmentEntity.setActive(0);
+            installmentEntity.setIs_active(0);
             installmentRepository.save(installmentEntity);
         }
     }
 
     @Override
     public List<InstallmentDTO> findAllInstallments(){
-        List<InstallmentEntity> list = installmentRepository.findAllByActive(1);
+        List<InstallmentEntity> list = installmentRepository.findAllByIs_active(1);
         List<InstallmentDTO> results =  new ArrayList<>();
         for(InstallmentEntity item:list){
             InstallmentDTO installmentDTO = modelMapper.map(item, InstallmentDTO.class);
