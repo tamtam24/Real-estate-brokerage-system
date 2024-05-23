@@ -1,75 +1,108 @@
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\entity\RoleEntity.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\model\dto\MyUserDetail.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\model\response\BuildingSearchResponse.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\exception\MyException.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\custom\impl\BuildingJdbcImpl.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\custom\impl\UserRepositoryImpl.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\security\CustomSuccessHandler.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\entity\BuildingEntity.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\utils\BuildingType.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\utils\StringUtils.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\converter\RoleConverter.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\model\dto\PasswordDTO.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\config\JpaAuditingConfig.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\custom\impl\AssignmentBuildingImpl.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\RoleRepository.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\SpringBootWebApplication.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\BuildingRepository.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\model\request\BuildingSearchRequest.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\api\admin\UserAPI.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\builder\BuildingSearchBuilder.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\custom\BuildingRepositoryCustom.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\entity\UserRoleEntity.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\service\impl\UserService.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\service\IRoleService.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\custom\AssignmentBuildingCustom.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\config\ModelMapperConfig.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\controller\admin\CustomerController.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\UserRepository.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\custom\RentAreaRepositoryCustom.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\converter\BuildingSearchBuilderCoverter.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\model\dto\AbstractDTO.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\constant\SystemConstant.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\config\WebSecurityConfig.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\AssignmentBuildingRepository.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\utils\NumberUtils.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\service\impl\BuildingService.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\controller\web\HomeController.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\model\response\ResponseDTO.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\enums\districtCode.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\converter\RentAreaConverter.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\RentAreaRepository.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\service\IUserService.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\utils\UploadFileUtils.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\custom\UserRepositoryCustom.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\service\impl\RoleService.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\service\impl\CustomUserDetailService.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\api\web\NewAPI.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\utils\DistrictCode.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\utils\MessageUtils.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\service\IBuildingService.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\custom\impl\BuildingRepositoryImpl.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\model\dto\DistrictDTO.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\model\dto\UserDTO.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\controller\admin\HomeController.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\enums\buildingType.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\entity\RentAreaEntity.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\custom\impl\RoleRepositoryImpl.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\utils\DisplayTagUtils.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\entity\AssignmentBuildingEntity.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\model\response\StaffResponseDTO.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\controller\admin\UserController.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\model\dto\AssignmentBuildingDTO.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\model\dto\CustomerDTO.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\entity\BaseEntity.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\utils\MapUtils.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\converter\BuildingConverter.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\model\dto\BuildingDTO.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\utils\ReadFileUtils.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\entity\UserEntity.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\api\admin\BuildingAPI.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\repository\custom\impl\RentAreaRepositoryImpl.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\security\utils\SecurityUtils.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\controller\admin\BuildingController.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\converter\UserConverter.java
-C:\Users\Thu Nguyen\OneDrive\Máy tính\Exercise-4\src\main\java\com\javaweb\model\dto\RoleDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/enums/Status.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/utils/ReadFileUtils.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/CustomerRepository.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/dto/RoleDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/entity/RoleEntity.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/api/web/NewAPI.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/converter/RentAreaConverter.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/dto/MyUserDetail.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/utils/DistrictCode.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/entity/CustomerEntity.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/entity/BaseEntity.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/service/impl/InstallmentService.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/enums/TransactionType.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/custom/InstallmentRepositoryCustom.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/custom/AssignmentBuildingCustom.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/enums/TypeCode.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/dto/BuildingDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/dto/CustomerDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/dto/AssignmentCustomerDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/controller/web/HomeController.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/controller/admin/CustomerController.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/entity/UserEntity.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/enums/InstallmentStatus.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/exception/MyException.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/converter/TransactionConverter.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/converter/BuildingSearchBuilderConverter.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/dto/DistrictDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/dto/TransactionDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/controller/admin/InstallmentController.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/api/admin/CustomerAPI.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/converter/UserConverter.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/dto/InstallmentDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/InstallmentRepository.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/custom/impl/UserRepositoryImpl.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/converter/BuildingDTOConverter.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/security/CustomSuccessHandler.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/utils/StringUtils.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/service/impl/TransactionService.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/entity/AssignmentCustomerEntity.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/service/IUserService.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/response/CustomerSearchResponse.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/utils/UploadFileUtils.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/UserRepository.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/api/admin/BuildingAPI.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/dto/AssignmentBuildingDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/utils/MapUtils.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/converter/RoleConverter.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/utils/BuildingType.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/utils/NumberUtils.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/controller/admin/BuildingController.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/entity/RentAreaEntity.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/custom/impl/CustomerRepositoryImpl.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/custom/TransactionRepositoryCustom.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/custom/BuildingRepositoryCustom.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/config/WebSecurityConfig.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/service/impl/CustomUserDetailService.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/converter/CustomerConverter.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/config/ModelMapperConfig.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/entity/TransactionEntity.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/BuildingRepository.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/dto/AbstractDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/enums/District.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/request/UserInstallmentSearchRequest.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/entity/AssignmentBuildingEntity.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/service/impl/BuildingService.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/service/impl/CustomerService.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/config/JpaAuditingConfig.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/custom/UserRepositoryCustom.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/service/IInstallmentService.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/TransactionRepository.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/controller/admin/HomeController.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/utils/DisplayTagUtils.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/response/BuildingSearchResponse.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/service/impl/RoleService.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/entity/UserRoleEntity.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/entity/InstallmentEntity.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/service/impl/UserService.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/custom/impl/BuildingRepositoryImpl.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/RentAreaRepository.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/RoleRepository.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/utils/MessageUtils.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/entity/AssignmentInstallmentEntity.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/service/IBuildingService.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/service/ICustomerService.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/entity/BuildingEntity.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/SpringBootWebApplication.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/custom/impl/AssignmentBuildingImpl.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/dto/UserDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/request/BuildingSearchRequest.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/AssignmentBuildingRepository.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/service/ITransactionService.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/custom/impl/InstallmentRepositoryImpl.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/dto/PasswordDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/controller/admin/UserController.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/service/IRoleService.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/response/ResponseDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/custom/CustomerRepositoryCustom.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/response/StaffResponseDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/custom/RentAreaRepositoryCustom.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/response/TransactionResponseDTO.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/api/admin/UserAPI.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/custom/impl/TransactionRepositoryImpl.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/model/request/CustomerSearchRequest.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/security/utils/SecurityUtils.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/constant/SystemConstant.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/builder/BuildingSearchBuilder.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/repository/custom/impl/RoleRepositoryImpl.java
+/home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/src/main/java/com/javaweb/api/admin/InstallmentAPI.java

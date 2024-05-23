@@ -5,6 +5,8 @@ import com.javaweb.model.dto.InstallmentDTO;
 import com.javaweb.repository.InstallmentRepository;
 import com.javaweb.service.IInstallmentService;
 import org.modelmapper.ModelMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,6 +16,7 @@ import java.util.List;
 
 @Service
 public class InstallmentService implements IInstallmentService {
+    private static final Logger log = LoggerFactory.getLogger(InstallmentService.class);
     @Autowired
     private InstallmentRepository installmentRepository;
 
@@ -32,7 +35,9 @@ public class InstallmentService implements IInstallmentService {
             installmentEntity = installmentRepository.findById(installmentDTO.getId()).get();
             updatedOrNewInstallment.setAssignmentInstallmentEntityList(installmentEntity.getAssignmentInstallmentEntityList());
         }
+
         updatedOrNewInstallment.setIs_active(1);
+        System.out.println("id"+ updatedOrNewInstallment.getId());
         installmentRepository.save(updatedOrNewInstallment);
         System.out.println("addorupdate oke");
 

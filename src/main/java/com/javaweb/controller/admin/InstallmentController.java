@@ -1,6 +1,8 @@
 package com.javaweb.controller.admin;
 
 import com.javaweb.constant.SystemConstant;
+import com.javaweb.enums.Status;
+import com.javaweb.model.dto.CustomerDTO;
 import com.javaweb.model.dto.InstallmentDTO;
 import com.javaweb.model.dto.UserDTO;
 import com.javaweb.service.IInstallmentService;
@@ -10,6 +12,7 @@ import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -28,7 +31,12 @@ public class InstallmentController {
     @Autowired
     private MessageUtils messageUtil;
 
-
+    @GetMapping(value = "admin/installment-edit")
+    public ModelAndView installmentEdit (@ModelAttribute("installmentEdit") InstallmentDTO installmentDTO, HttpServletRequest request){
+        ModelAndView mav = new ModelAndView("admin/installment/edit");
+        mav.addObject("statuss", Status.statusType());
+        return mav;
+    }
     @RequestMapping(value = "admin/installment-list", method = RequestMethod.GET)
     public ModelAndView installmentList(@ModelAttribute(SystemConstant.MODEL) InstallmentDTO model, HttpServletRequest request) {
         System.out.println("Hello world");

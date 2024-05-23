@@ -17,6 +17,8 @@ public class InstallmentAPI {
 
     @PostMapping
     public Boolean addOrUpdateIInstallment(@RequestBody InstallmentDTO installmentDTO){
+        System.out.println("Hello worlddd");
+        System.out.println(installmentDTO.getCode());
         installmentService.addOrUpdateInstallment(installmentDTO);
         System.out.println("da them/sua tra gop thanh cong");
         return true;
