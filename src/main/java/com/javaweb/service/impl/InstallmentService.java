@@ -1,7 +1,9 @@
 package com.javaweb.service.impl;
 
+import com.javaweb.entity.AssignmentInstallmentEntity;
 import com.javaweb.entity.InstallmentEntity;
 import com.javaweb.model.dto.InstallmentDTO;
+import com.javaweb.model.dto.Installment_Building_UserDto;
 import com.javaweb.repository.InstallmentRepository;
 import com.javaweb.service.IInstallmentService;
 import org.modelmapper.ModelMapper;
@@ -25,7 +27,7 @@ public class InstallmentService implements IInstallmentService {
 
     @Override
     @Transactional
-    public void addOrUpdateInstallment(InstallmentDTO installmentDTO){
+    public InstallmentEntity addOrUpdateInstallment(InstallmentDTO installmentDTO){
         InstallmentEntity updatedOrNewInstallment = modelMapper.map(installmentDTO, InstallmentEntity.class);
         if(installmentDTO.getStatus() =="" ||installmentDTO.getStatus() == null){
             updatedOrNewInstallment.setStatus("CHUA_XL");
@@ -37,10 +39,10 @@ public class InstallmentService implements IInstallmentService {
         }
 
         updatedOrNewInstallment.setIs_active(1);
-        System.out.println("id"+ updatedOrNewInstallment.getId());
-        installmentRepository.save(updatedOrNewInstallment);
-        System.out.println("addorupdate oke");
-
+        //System.out.println("id ne"+ updatedOrNewInstallment.getId());
+        InstallmentEntity installment = installmentRepository.save(updatedOrNewInstallment);
+        System.out.println("id ne"+ installment.getId());
+        return installment;
     }
 
     @Override
@@ -54,13 +56,34 @@ public class InstallmentService implements IInstallmentService {
     }
 
     @Override
-    public List<InstallmentDTO> findAllInstallments(){
-        List<InstallmentEntity> list = installmentRepository.findAllByIs_active(1);
-        List<InstallmentDTO> results =  new ArrayList<>();
-        for(InstallmentEntity item:list){
-            InstallmentDTO installmentDTO = modelMapper.map(item, InstallmentDTO.class);
+    public List<Installment_Building_UserDto> findAllInstallments(){
+        List<AssignmentInstallmentEntity> list = installmentRepository.findAllInstallmentIncludeBuilding();
+       // List<InstallmentEntity> listtest = installmentRepository.findAllInstallmentIncludeBuilding();
+       // System.out.println("listest"+ listtest.get(0));
+        //List<AssignmentInstallmentEntity> list1 = list.get(0).getAssignmentInstallmentEntityList();
+        //System.out.println("list1"+ list1.get(0).getBuildings().getName());
+        List<Installment_Building_UserDto> results =  new ArrayList<>();
+        for(AssignmentInstallmentEntity item:list){
+            Installment_Building_UserDto installmentDTO = modelMapper.map(item, Installment_Building_UserDto.class);
             results.add(installmentDTO);
         }
+//        List<InstallmentDTO> results =  new ArrayList<>();
+//        for(InstallmentEntity item:list){
+//            InstallmentDTO installmentDTO = modelMapper.map(item, InstallmentDTO.class);
+//            results.add(installmentDTO);
+//        }
         return results;
+    }
+
+    @Override
+    public void createAssignmentInstallment(Long installmentId, Long buildingId, Long userId, Long staffId) {
+        installmentRepository.createAssignmentInstallment(installmentId, buildingId, userId, staffId);
+    }
+
+    @Override
+    public InstallmentDTO findInstallmentById(Long id) {
+        InstallmentEntity installmentEntity = installmentRepository.findById(id).get();
+        InstallmentDTO installmentDTO = modelMapper.map(installmentEntity, InstallmentDTO.class);
+        return installmentDTO;
     }
 }

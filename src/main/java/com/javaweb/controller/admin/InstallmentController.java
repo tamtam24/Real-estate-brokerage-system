@@ -2,9 +2,8 @@ package com.javaweb.controller.admin;
 
 import com.javaweb.constant.SystemConstant;
 import com.javaweb.enums.Status;
-import com.javaweb.model.dto.CustomerDTO;
-import com.javaweb.model.dto.InstallmentDTO;
-import com.javaweb.model.dto.UserDTO;
+import com.javaweb.enums.TransactionType;
+import com.javaweb.model.dto.*;
 import com.javaweb.service.IInstallmentService;
 import com.javaweb.utils.DisplayTagUtils;
 import com.javaweb.utils.MessageUtils;
@@ -12,10 +11,7 @@ import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -31,14 +27,24 @@ public class InstallmentController {
     @Autowired
     private MessageUtils messageUtil;
 
+    @GetMapping(value = "admin/installment-edit-{id}")
+    public ModelAndView installmentEdit (@PathVariable("id") Long Id , HttpServletRequest request){
+        ModelAndView nav = new ModelAndView("admin/installment/edit-custom");
+        nav.addObject("statuss", Status.statusType());
+
+        InstallmentDTO installmentDTO = installmentService.findInstallmentById(Id);
+        nav.addObject("installmentEdit",installmentDTO);
+        return nav;
+    }
     @GetMapping(value = "admin/installment-edit")
-    public ModelAndView installmentEdit (@ModelAttribute("installmentEdit") InstallmentDTO installmentDTO, HttpServletRequest request){
+    public ModelAndView installmentEdit (@ModelAttribute("installmentEdit") InstallmentCreationDTO installmentCreationDTO, HttpServletRequest request){
         ModelAndView mav = new ModelAndView("admin/installment/edit");
         mav.addObject("statuss", Status.statusType());
+        mav.addObject("id", null);
         return mav;
     }
     @RequestMapping(value = "admin/installment-list", method = RequestMethod.GET)
-    public ModelAndView installmentList(@ModelAttribute(SystemConstant.MODEL) InstallmentDTO model, HttpServletRequest request) {
+    public ModelAndView installmentList(@ModelAttribute(SystemConstant.MODEL) Installment_Building_UserDto model, HttpServletRequest request) {
         System.out.println("Hello world");
 
         //Lấy ra view cần hiển thị
@@ -50,8 +56,9 @@ public class InstallmentController {
         //Lấy dữ liệu từ service
 
         //Lấy ra danh sách các installments
-        List<InstallmentDTO> news = installmentService.findAllInstallments();
+        List<Installment_Building_UserDto> news = installmentService.findAllInstallments();
         System.out.println("news: " + news);
+        System.out.println("so luong" + news.size());
 
         //Đổ data vào dto
         model.setListResult(news);

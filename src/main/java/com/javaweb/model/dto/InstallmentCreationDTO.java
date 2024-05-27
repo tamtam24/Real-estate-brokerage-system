@@ -1,15 +1,14 @@
 package com.javaweb.model.dto;
 
-import com.javaweb.entity.AssignmentInstallmentEntity;
-
-import java.util.List;
-
-public class InstallmentDTO extends AbstractDTO{
+public class InstallmentCreationDTO extends AbstractDTO {
     private String code;
     private String note;
     private String duedate;
     private Long amount;
     private String status;
+    private Long buildingId;
+    private Long customerId;
+    private Long staffId;
 
     public String getCode() {
         return code;
@@ -51,4 +50,27 @@ public class InstallmentDTO extends AbstractDTO{
         this.status = status;
     }
 
+    public Long getBuildingId() {
+        return buildingId;
+    }
+
+    public void setBuildingId(Long buildingId) {
+        this.buildingId = buildingId;
+    }
+
+    public Long getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(Long customerId) {
+        this.customerId = customerId;
+    }
+
+    public Long getStaffId() {
+        return staffId;
+    }
+
+    public void setStaffId(Long staffId) {
+        this.staffId = staffId;
+    }
 }

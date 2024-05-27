@@ -139,6 +139,9 @@ public class BuildingRepositoryImpl implements BuildingRepositoryCustom {
             sql.append(where);
         }
         sql.append(" ; ");
+
+        System.out.println("sql:::" + sql.toString());
+
         Query query = entityManager.createNativeQuery(sql.toString(),BuildingEntity.class);
 
         return query.getResultList();

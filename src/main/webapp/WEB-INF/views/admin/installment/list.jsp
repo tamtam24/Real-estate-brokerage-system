@@ -95,10 +95,14 @@
 
                             <!-- ------------------------------------------------------------------- -->
 
-                            <display:column headerClass="text-left" property="code" title="Mã trả góp"/>
-                            <display:column headerClass="text-left" property="status" title="Tình trạng"/>
-                            <display:column headerClass="text-left" property="amount" title="Số tiền"/>
-                            <display:column headerClass="text-left" property="note" title="Ghi chú"/>
+                            <display:column headerClass="text-left" property="installments.code" title="Mã trả góp"/>
+                            <display:column headerClass="text-left" property="installments.status" title="Tình trạng"/>
+                            <display:column headerClass="text-left" property="installments.amount" title="Số tiền"/>
+                            <display:column headerClass="text-left" property="installments.note" title="Ghi chú"/>
+                            <display:column headerClass="text-left" property="buildings.name" title="Tên tòa nhà"/>
+                            <display:column headerClass="text-left" property="staffs.fullName" title="Tên nhân viên quản lý"/>
+                            <display:column headerClass="text-left" property="users.fullName" title="Tên khách trả góp"/>
+                            <display:column headerClass="text-left" property="installments.duedate" title="Ngày tới hạn"/>
 
                             <display:column headerClass="col-actions" title="Thao tác">
                                 <security:authorize access="hasRole('MANAGER')">
@@ -107,7 +111,7 @@
                                     </button>
                                 </security:authorize>
 
-                                <a class="btn btn-xs btn-info" title="Sửa thông tin" href="/admin/customer-edit-${tableList.id}" >
+                                <a class="btn btn-xs btn-info" title="Sửa thông tin" href="/admin/installment-edit-${tableList.id}" >
                                     <i class="ace-icon fa fa-pencil bigger-120"></i>
                                 </a>
                                 <security:authorize access="hasRole('MANAGER')">
