@@ -103,7 +103,7 @@
                                     <img src="https://bizweb.dktcdn.net/thumb/large/100/328/362/articles/vinpearl-ha-long-bay-resort-0.jpg?v=1534491225390" alt="">
                                 </div>
                                 <div class="col-12 col-md-7">
-                                    <p class="title-tintuc"><a href="">Xuất hiện căn hộ cao cấp làm mê mẩn giới
+                                    <p class="title-tintuc"><a href="http://www.diaocdonganh.vn/2020/04/xuat-hien-can-ho-cao-cap-lam-me-man.html">Xuất hiện căn hộ cao cấp làm mê mẩn giới
                                         thượng lưu</a>
                                     </p>
                                 </div>
@@ -114,7 +114,7 @@
                                     <img src="https://bizweb.dktcdn.net/thumb/large/100/328/362/articles/a7.jpg?v=1534491036947" alt="">
                                 </div>
                                 <div class="col-12 col-md-7">
-                                    <p class="title-tintuc"><a href="">Tiếp tục rà soát, đánh giá những bất cập liên
+                                    <p class="title-tintuc"><a href="https://dangcongsan.vn/phap-luat/tiep-tuc-ra-soat-danh-gia-nhung-bat-cap-lien-quan-den-tich-tu-dat-dai-494253.html">Tiếp tục rà soát, đánh giá những bất cập liên
                                         quan đến
                                         tích tụ đất đai</a>
                                     </p>
@@ -126,10 +126,11 @@
                                     <img src="https://bizweb.dktcdn.net/thumb/large/100/328/362/articles/36-1-kmey.jpg?v=1534490952150" alt="">
                                 </div>
                                 <div class="col-12 col-md-7">
-                                    <p class="title-tintuc"><a href="">Hà Nội phê duyệt chỉ giới đường đỏ tuyến
+                                    <p class="title-tintuc"><a href="http://www.diaocdonganh.vn/2020/04/ha-noi-phe-duyet-chi-gioi-uong-o-tuyen.html">Hà Nội phê duyệt chỉ giới đường đỏ tuyến
                                         đường khu đô
                                         thị Gia Lâm tới ga Phú Thị</a>
                                     </p>
+
                                 </div>
                             </div>
                             <div class="border border-bottom mt-3 "></div>
@@ -138,7 +139,7 @@
                                     <img src="https://bizweb.dktcdn.net/thumb/large/100/328/362/articles/a7.jpg?v=1534491036947" alt="">
                                 </div>
                                 <div class="col-12 col-md-7">
-                                    <p class="title-tintuc"><a href="">Chính sách ưu đãi có một không hai khi đầu tư
+                                    <p class="title-tintuc"><a href="http://www.diaocdonganh.vn/2020/04/chinh-sach-uu-ai-co-mot-khong-hai-khi.html">Chính sách ưu đãi có một không hai khi đầu tư
                                         BĐS nghỉ
                                         dưỡng tại Khánh Hòa</a>
                                     </p>
@@ -158,7 +159,7 @@
                             <div class="content_blog_full">
                                 <h3><a class="title-h3" style="font-size: 20px; font-weight:700;"
                                        title="Xuất hiện căn hộ cao cấp làm mê mẩn giới thượng lưu"
-                                       href="/xuat-hien-can-ho-cao-cap-lam-me-man-gioi-thuong-luu">Xuất
+                                       href="http://www.diaocdonganh.vn/2020/04/xuat-hien-can-ho-cao-cap-lam-me-man.html">Xuất
                                     hiện căn hộ cao cấp làm mê mẩn giới thượng lưu</a></h3>
                                 <span class="time_post f">
                                         <i style="color: #35BF76" class="fa fa-calendar icon-tintuc"></i>&nbsp;Thứ
@@ -176,7 +177,7 @@
                                         tưởng ngay “siêu phẩm” với thành phố Venice xinh đẹp củ...
                                     </p>
                                     <button class="btn btn-primary px-4">
-                                        <a href="./ChiTiet.html" style="color:#fff">Xem chi
+                                        <a href="http://www.diaocdonganh.vn/2020/04/xuat-hien-can-ho-cao-cap-lam-me-man.html" style="color:#fff">Xem chi
                                             tiết</a>
                                     </button>
                                 </div>
@@ -192,7 +193,7 @@
                         <div class="col-12 col-md-8">
                             <h3><a class="title-h3" style="font-size: 20px; font-weight:700;"
                                    title=" Tiếp tục rà soát, đánh giá những bất cập liên quan đến tích tụ đất đai"
-                                   href="/tiep-tuc-ra-soat-danh-gia-nhung-bat-cap-lien-quan-den-tich-tu-dat-dai">Hà
+                                   href="http://www.diaocdonganh.vn/2020/04/ha-noi-phe-duyet-chi-gioi-uong-o-tuyen.html">Hà
                                 Nội phê duyệt chỉ giới đường đỏ tuyến đường khu đô thị Gia Lâm tới ga Phú
                                 Thị</a></h3>
                             <span class="time_post f"><i style="color: #35BF76" class="fa fa-calendar"></i>&nbsp;Thứ
@@ -219,7 +220,7 @@
                         <div class="col-12 col-md-8">
                             <h3><a class="title-h3" style="font-size: 20px; font-weight:700;"
                                    title=" Tiếp tục rà soát, đánh giá những bất cập liên quan đến tích tụ đất đai"
-                                   href="/tiep-tuc-ra-soat-danh-gia-nhung-bat-cap-lien-quan-den-tich-tu-dat-dai">Chính
+                                   href="http://www.diaocdonganh.vn/2020/04/chinh-sach-uu-ai-co-mot-khong-hai-khi.html">Chính
                                 sách ưu đãi có một không hai khi đầu tư BĐS nghỉ
                                 dưỡng tại Khánh Hòa</a></h3>
                             <span class="time_post f"><i style="color: #35BF76" class="fa fa-calendar"></i>&nbsp;Thứ
@@ -246,7 +247,7 @@
                         <div class="col-12 col-md-8">
                             <h3><a class="title-h3" style="font-size: 20px; font-weight:700;"
                                    title=" Tiếp tục rà soát, đánh giá những bất cập liên quan đến tích tụ đất đai"
-                                   href="/tiep-tuc-ra-soat-danh-gia-nhung-bat-cap-lien-quan-den-tich-tu-dat-dai">Tiếp
+                                   href="https://dangcongsan.vn/phap-luat/tiep-tuc-ra-soat-danh-gia-nhung-bat-cap-lien-quan-den-tich-tu-dat-dai-494253.html">Tiếp
                                 tục rà soát, đánh giá những bất cập liên quan đến tích tụ đất đai</a></h3>
                             <span class="time_post f"><i style="color: #35BF76" class="fa fa-calendar"></i>&nbsp;Thứ
                                     Fri, 17/08/2018

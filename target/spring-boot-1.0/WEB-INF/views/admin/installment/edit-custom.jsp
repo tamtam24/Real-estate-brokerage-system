@@ -100,24 +100,6 @@
 
                             </div>
                             <div class="form-group">
-                                <label class="col-xs-3">Mã nhân viên</label>
-                                <div class="col-xs-9">
-                                    <form:input class="form-control" path="staffId" name="staffId" value=""/>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-xs-3">Mã tòa nhà</label>
-                                <div class="col-xs-9">
-                                    <form:input class="form-control" path="buildingId" name="buildingId" value=""/>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-xs-3">Mã khách hàng trả góp</label>
-                                <div class="col-xs-9">
-                                    <form:input class="form-control" path="customerId" name="customerId" value=""/>
-                                </div>
-                            </div>
-                            <div class="form-group">
                                 <label class="col-xs-3"></label>
                                 <div class="col-xs-9">
                                     <c:if test="${not empty installmentEdit.id}">
