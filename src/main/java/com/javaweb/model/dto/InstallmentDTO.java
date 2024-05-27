@@ -1,5 +1,9 @@
 package com.javaweb.model.dto;
 
+import com.javaweb.entity.AssignmentInstallmentEntity;
+
+import java.util.List;
+
 public class InstallmentDTO extends AbstractDTO{
     private String code;
     private String note;
@@ -46,4 +50,5 @@ public class InstallmentDTO extends AbstractDTO{
     public void setStatus(String status) {
         this.status = status;
     }
+
 }

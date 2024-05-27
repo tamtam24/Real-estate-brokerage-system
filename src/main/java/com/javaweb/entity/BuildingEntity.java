@@ -95,7 +95,7 @@ public class BuildingEntity {
 
     @Column(name = "image")
     private String image;
-//
+
     @Column(name = "createddate")
     private Date createddate;
 

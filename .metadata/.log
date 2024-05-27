@@ -1,0 +1,26 @@
+!SESSION 2024-05-14 09:25:03.334 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product /home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product /home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system -data /home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-14 09:25:16.856
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-14 09:25:19.420
+!MESSAGE Logback config file: /home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+!SESSION 2024-05-14 09:27:45.707 -----------------------------------------------
+eclipse.buildId=4.31.0.20240307-1200
+java.version=17.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product /home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product /home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-14 09:27:51.556
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-05-14 09:27:55.951
+!MESSAGE Logback config file: /home/haphuthinh/Workplace/School_project/Real-estate-brokerage-system/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
