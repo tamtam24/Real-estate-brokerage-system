@@ -1,10 +1,16 @@
 package com.javaweb.service.impl;
 
 import com.javaweb.entity.AssignmentInstallmentEntity;
+import com.javaweb.entity.BuildingEntity;
 import com.javaweb.entity.InstallmentEntity;
+import com.javaweb.entity.UserEntity;
+import com.javaweb.model.dto.InstallmentCreationDTO;
 import com.javaweb.model.dto.InstallmentDTO;
 import com.javaweb.model.dto.Installment_Building_UserDto;
+import com.javaweb.repository.AssignmentInstallmentRepository;
+import com.javaweb.repository.BuildingRepository;
 import com.javaweb.repository.InstallmentRepository;
+import com.javaweb.repository.UserRepository;
 import com.javaweb.service.IInstallmentService;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
@@ -21,6 +27,15 @@ public class InstallmentService implements IInstallmentService {
     private static final Logger log = LoggerFactory.getLogger(InstallmentService.class);
     @Autowired
     private InstallmentRepository installmentRepository;
+
+    @Autowired
+    private BuildingRepository buildingRepository;
+
+    @Autowired
+    private UserRepository userRepository;
+
+    @Autowired
+    private AssignmentInstallmentRepository assignmentInstallmentRepository;
 
     @Autowired
     private ModelMapper modelMapper;
@@ -43,6 +58,29 @@ public class InstallmentService implements IInstallmentService {
         InstallmentEntity installment = installmentRepository.save(updatedOrNewInstallment);
         System.out.println("id ne"+ installment.getId());
         return installment;
+    }
+
+    @Transactional
+    public InstallmentEntity addOrUpdateInstallmentFixing(InstallmentCreationDTO installmentCreationDTO){
+        InstallmentEntity updatedOrNewInstallment = modelMapper.map(installmentCreationDTO, InstallmentEntity.class);
+        if(installmentCreationDTO.getStatus() =="" ||installmentCreationDTO.getStatus() == null){
+            updatedOrNewInstallment.setStatus("CHUA_XL");
+        }
+        InstallmentEntity installmentEntity;
+        if(installmentCreationDTO.getId() != null){
+            installmentEntity = installmentRepository.findById(installmentCreationDTO.getId()).get();
+            updatedOrNewInstallment.setAssignmentInstallmentEntityList(installmentEntity.getAssignmentInstallmentEntityList());
+        }
+        updatedOrNewInstallment.setIs_active(1);
+        AssignmentInstallmentEntity assignmentInstallmentEntity = new AssignmentInstallmentEntity();
+        BuildingEntity buildingEntity = buildingRepository.findById(installmentCreationDTO.getBuildingId()).get();
+        UserEntity userEntity = userRepository.findById(installmentCreationDTO.getCustomerId()).get();
+        installmentRepository.save(updatedOrNewInstallment);
+        assignmentInstallmentEntity.setBuildings(buildingEntity);
+        assignmentInstallmentEntity.setUsers(userEntity);
+        assignmentInstallmentEntity.setInstallments(updatedOrNewInstallment);
+        assignmentInstallmentRepository.save(assignmentInstallmentEntity);
+        return updatedOrNewInstallment;
     }
 
     @Override
