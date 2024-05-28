@@ -290,10 +290,6 @@
         <div class="top-footer text-center mt-0">
             <div class="logo logo-footer pt-5">
                 <a href="./ViewHome.html"><img src="https://bizweb.dktcdn.net/100/328/362/themes/894751/assets/logo_footer.png?1676257083798" alt="logo-footer"></a>
-                <p class="desc-logo-footer mt-3">Với hơn 10 năm kinh nghiệm, SkyLand tự hào là sàn
-                    mua
-                    bán, giao dịch và quảng cáo
-                    bất động sản hàng đầu tại Việt Nam</p>
                 <div class="item-footer mt-5">
                     <div class="row">
                         <div class="col-12 col-md-4 text-center">
@@ -302,7 +298,7 @@
                             </div>
                             <div class="content-center-footer">
                                 <p class="mb-1 mt-3">Trụ sở chính</p>
-                                <p class="desc-footer">Số 46 Man Thiện, TP Thủ Đức, TP HCM</p>
+                                <p class="desc-footer">69 Tân Lập, Dĩ An, Bình Dương</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-4 text-center">
@@ -311,7 +307,7 @@
                             </div>
                             <div class="content-center-footer">
                                 <p class="mb-1 mt-3">Hotline</p>
-                                <p class="desc-footer"><a class="a-text" href="#">098828</a></p>
+                                <p class="desc-footer"><a class="a-text" href="#">0933516434</a></p>
                             </div>
                         </div>
                         <div class="col-12 col-md-4 text-center">
@@ -320,7 +316,7 @@
                             </div>
                             <div class="content-center-footer">
                                 <p class="mb-1 mt-3">Email</p>
-                                <p class="desc-footer"><a class="a-text" href="#">vsh@gmail.com</a>
+                                <p class="desc-footer"><a class="a-text" href="#">22521405@gm.uit.edu.vn</a>
                                 </p>
                             </div>
                         </div>
@@ -377,8 +373,8 @@
         </div>
     </div>
     <div class="bottom-footer-2">
-        <div class="text-center desc-bottom-footer-2">@ Bản quyền thuộc về Happy Team |
-            Cung cấp bởi <a class="a-text group-name" href="#">HappyTeam</a></div>
+        <div class="text-center desc-bottom-footer-2">@ Bản quyền thuộc về Nhóm 15 |
+            Cung cấp bởi <a class="a-text group-name" href="lien-he">Nhóm 15</a></div>
     </div>
     </div>
 </footer>

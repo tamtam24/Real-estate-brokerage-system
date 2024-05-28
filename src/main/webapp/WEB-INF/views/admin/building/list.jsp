@@ -65,6 +65,9 @@
                             <div class="widget-main">
                                 <form:form id="listForm" modelAttribute="modelSearch" action="${buildingListURL}"  method="GET">
                                     <div class="row">
+
+
+
                                         <div class="form-group">
                                             <div class="col-xs-12 ">
                                                 <div class="col-xs-6">
