@@ -11,6 +11,7 @@ public class SystemConstant {
     public static final String MANAGER_ROLE = "ROLE_MANAGER";
     public static final String HOME = "/trang-chu";
     public static final String ADMIN_HOME = "/admin/home";
+    public static final String INSTALLMENT_HOME = "/installment-view";
     public static final String MODEL = "model";
     public static final String INSERT_SUCCESS = "insert_success";
     public static final String UPDATE_SUCCESS = "update_success";

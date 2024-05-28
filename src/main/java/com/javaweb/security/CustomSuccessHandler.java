@@ -42,6 +42,8 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
             url = SystemConstant.HOME;
         } else if (isAdmin(roles)) {
             url = SystemConstant.ADMIN_HOME;
+        } else if (isInstallment(roles)) {
+            url = SystemConstant.INSTALLMENT_HOME;
         }
         return url;
     }
@@ -62,7 +64,13 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
     }
 
     private boolean isUser(List<String> roles) {
-        if (roles.contains(SystemConstant.USER_ROLE)||roles.contains(SystemConstant.USERINSTALLMENT_ROLE)) {
+        if (roles.contains(SystemConstant.USER_ROLE)) {
+            return true;
+        }
+        return false;
+    }
+    private boolean isInstallment(List<String> roles) {
+        if(roles.contains(SystemConstant.USERINSTALLMENT_ROLE)){
             return true;
         }
         return false;
