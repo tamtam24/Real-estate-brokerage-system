@@ -32,8 +32,7 @@
 			<div class="col-12 col-md-3">
 				<div class="logo">
 					<a href="">
-						<img src="https://bizweb.dktcdn.net/100/328/362/themes/894751/assets/logo.png?1676257083798"
-							 alt="">
+						<h1 style="color: var(--primary-color);">BDS360</h1>
 					</a>
 				</div>
 			</div>

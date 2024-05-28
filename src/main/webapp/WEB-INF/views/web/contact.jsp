@@ -89,7 +89,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <h2 class="title-lienhe"><strong>Công ty cổ phần bất động sản SkyLand</strong></h2>
+                    <h2 class="title-lienhe"><strong>Công ty cổ phần bất động sản 360</strong></h2>
                     <div class="desc-lienhe">
 
                         <ul class="margin-bottom-15 link" style="list-style-type: none;">
@@ -138,7 +138,6 @@
         <div class="container">
             <div class="top-footer text-center mt-0">
                 <div class="logo logo-footer pt-5">
-                    <a href="./ViewHome.html"><img src="https://bizweb.dktcdn.net/100/328/362/themes/894751/assets/logo_footer.png?1676257083798" alt="logo-footer"></a>
 
                     <div class="item-footer mt-5">
                         <div class="row">
