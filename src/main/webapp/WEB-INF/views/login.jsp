@@ -65,9 +65,9 @@
 													<a href="#!" class="login-extension text-white"><i class="fab fa-google fa-lg"></i></a>
 												</div>
 											</div>
-											<div class="text-center">
+											<%--<div class="text-center">
 												<p class="mb-0 tex-center account">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a></p>
-											</div>
+											</div>--%>
 
 										</div>
 									</div>

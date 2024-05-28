@@ -54,7 +54,6 @@ public class BuildingController {
         else{//MANAGER
             responseList = IBuildingService.findAll(buildingSearchRequest, PageRequest.of(buildingSearchRequest.getPage() - 1, buildingSearchRequest.getMaxPageItems()));
         }
-
         buildingSearchRequest.setListResult(responseList);
         buildingSearchRequest.setTotalItems(IBuildingService.countTotalItem());
         nav.addObject("buildingList",buildingSearchRequest);
@@ -66,7 +65,6 @@ public class BuildingController {
         ModelAndView nav = new ModelAndView("admin/building/edit");
         nav.addObject("districts", District.type());
         nav.addObject("typeCodes", TypeCode.type());
-
         return  nav;
 
     }
