@@ -49,6 +49,19 @@ public class InstallmentRepositoryImpl implements InstallmentRepositoryCustom {
     }
 
     @Override
+    public List<AssignmentInstallmentEntity>findInstallmentByUserId(Long userId){
+        String sql = "SELECT * FROM \n" +
+                "assignmentinstallment a_i, installment i, building b, user us, user st\n" +
+                "WHERE a_i.installmentid = i.id\n" +
+                "AND i.is_active = 1\n" +
+                "AND a_i.buildingid = b.id\n" +
+                "AND a_i.staffid = st.id"+
+                "AND a_i.userid = "+userId;
+        Query query = entityManager.createNativeQuery(sql, AssignmentInstallmentEntity.class);
+        return (List<AssignmentInstallmentEntity>) query.getResultList();
+    }
+
+    @Override
     public void createAssignmentInstallment(Long installmentId, Long buildingId, Long userId, Long staffId) {
         String sql = "INSERT INTO assignmentinstallment (installmentid, buildingid, userid, staffid) VALUES (" + installmentId + ", " + buildingId + ", " + userId + ", " + staffId + ")";
         System.out.println("sql: " + sql);

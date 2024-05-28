@@ -4,6 +4,7 @@ import com.javaweb.constant.SystemConstant;
 import com.javaweb.enums.Status;
 import com.javaweb.enums.TransactionType;
 import com.javaweb.model.dto.*;
+import com.javaweb.security.utils.SecurityUtils;
 import com.javaweb.service.IInstallmentService;
 import com.javaweb.utils.DisplayTagUtils;
 import com.javaweb.utils.MessageUtils;
@@ -44,6 +45,23 @@ public class InstallmentController {
         mav.addObject("id", null);
         return mav;
     }
+
+    @RequestMapping(value = "/installment-view", method = RequestMethod.GET)
+    public ModelAndView showInstallmentView (@ModelAttribute(SystemConstant.MODEL)Installment_Building_UserDto model,HttpServletRequest request){
+        ModelAndView mav = new ModelAndView("web/installment-view");
+        DisplayTagUtils.of(request, model);
+        if(SecurityUtils.getAuthorities().contains("ROLE_INSTALLMENT_USER")){
+            Long userId = SecurityUtils.getPrincipal().getId();
+            List<Installment_Building_UserDto> news = installmentService.findInstallmentsByUserId(userId);
+            model.setListResult(news);
+            mav.addObject(SystemConstant.MODEL, model);
+            initMessageResponse(mav, request);
+        }
+
+        return mav;
+    }
+
+
 
     //GET Installment list
     @RequestMapping(value = "admin/installment-list", method = RequestMethod.GET)

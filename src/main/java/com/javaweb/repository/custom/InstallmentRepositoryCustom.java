@@ -12,4 +12,5 @@ public interface InstallmentRepositoryCustom {
     List<AssignmentInstallmentEntity> findAllInstallmentIncludeBuilding();
     void createAssignmentInstallment(Long installmentId, Long buildingId, Long userId, Long staffId);
     List<InstallmentGroupByCustomerDTO> findInstallmentGroupByCustomer();
+    List<AssignmentInstallmentEntity>findInstallmentByUserId(Long userId);
 }

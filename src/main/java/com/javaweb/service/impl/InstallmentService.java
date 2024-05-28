@@ -115,6 +115,17 @@ public class InstallmentService implements IInstallmentService {
         return results;
     }
 
+    public List<Installment_Building_UserDto>findInstallmentsByUserId(Long userId){
+        List<AssignmentInstallmentEntity> list = installmentRepository.findInstallmentByUserId(userId);
+        List<Installment_Building_UserDto> results =  new ArrayList<>();
+        for(AssignmentInstallmentEntity item:list){
+            Installment_Building_UserDto installmentDTO = modelMapper.map(item, Installment_Building_UserDto.class);
+            results.add(installmentDTO);
+        }
+        return results;
+
+    }
+
     @Override
     public void createAssignmentInstallment(Long installmentId, Long buildingId, Long userId, Long staffId) {
         installmentRepository.createAssignmentInstallment(installmentId, buildingId, userId, staffId);

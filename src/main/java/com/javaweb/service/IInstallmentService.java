@@ -14,6 +14,7 @@ public interface IInstallmentService {
     InstallmentEntity addOrUpdateInstallmentFixing(InstallmentCreationDTO installmentCreationDTO);
     void deleteInstallment(List<Long>ids);
     List<Installment_Building_UserDto> findAllInstallments();
+    List<Installment_Building_UserDto>findInstallmentsByUserId(Long userId);
     void createAssignmentInstallment(Long installmentId, Long buildingId, Long userId, Long staffId);
     InstallmentDTO findInstallmentById(Long id);
     List<InstallmentGroupByCustomerDTO> findInstallmentGroupByCustomer();
