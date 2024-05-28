@@ -48,6 +48,9 @@ public class InstallmentAPI {
     @DeleteMapping("/{ids}")
     public Boolean deleteCustomers(@PathVariable List<Long> ids){
         //xuong db de xoa building theo ds gui ve
+        for (Long id : ids){
+            System.out.println("id ne"+ id);
+        }
         if(ids.size()>0){
             installmentService.deleteInstallment(ids);
             System.out.println("oke");

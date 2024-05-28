@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file= "/common/taglib.jsp" %>
 <%@ taglib prefix="display" uri="http://displaytag.sf.net"%>
-<c:url var="installmentListURL" value="/admin/installment-list" />
+<c:url var="installmentListURL" value="admin/installment-group-by-customer-list" />
 <c:url var="customerAPI" value="/api/installment"/>
 <html>
 <head>
@@ -37,31 +37,6 @@
         </div>
 
         <div class="page-content">
-            <div class="row">
-                                    </div>
-                                    <div class="pull-right">
-                                        <a href="/admin/installment-edit" >
-                                            <button class="btn btn-info" title="Thêm ghi nhận trả góp">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
-                                                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
-                                                    <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"></path>
-                                                </svg>
-
-                                            </button>
-                                        </a>
-                                        <security:authorize access="hasRole('MANAGER')">
-                                            <button class="btn btn-danger" title="Xóa khách hàng"id="btnDeleteCustomer">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-dash" viewBox="0 0 16 16">
-                                                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M11 12h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1m0-7a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
-                                                    <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"></path>
-                                                </svg>
-                                            </button>
-                                        </security:authorize>
-
-
-                                    </div>
-                                </div>
-            </div>
 
             <!-- ------------------------------------------------------------------- -->
 
@@ -95,33 +70,12 @@
 
                             <!-- ------------------------------------------------------------------- -->
 
-                            <display:column headerClass="text-left" property="installments.code" title="Mã trả góp"/>
-                            <display:column headerClass="text-left" property="installments.status" title="Tình trạng"/>
-                            <display:column headerClass="text-left" property="installments.amount" title="Số tiền"/>
-                            <display:column headerClass="text-left" property="installments.note" title="Ghi chú"/>
-                            <display:column headerClass="text-left" property="buildings.name" title="Tên tòa nhà"/>
-                            <display:column headerClass="text-left" property="staffs.fullName" title="Tên nhân viên quản lý"/>
-                            <display:column headerClass="text-left" property="users.fullName" title="Tên khách trả góp"/>
-                            <display:column headerClass="text-left" property="installments.duedate" title="Ngày tới hạn"/>
+                            <display:column headerClass="text-left" property="customer_id" title="Mã khách hàng"/>
+                            <display:column headerClass="text-left" property="customer_name" title="Tên khách hàng"/>
+                            <display:column headerClass="text-left" property="customer_phone" title="Số điện thoại"/>
+                            <display:column headerClass="text-left" property="customer_email" title="Email"/>
+                            <display:column headerClass="text-left" property="total_amount" title="Tổng tiền đã trả góp"/>
 
-                            <display:column headerClass="col-actions" title="Thao tác">
-                                <security:authorize access="hasRole('MANAGER')">
-                                    <button class="btn btn-xs btn-success" title="Giao khách hàng" onclick="assignmentCustomer(${tableList.id})">
-                                        <i class="ace-icon glyphicon glyphicon-list"></i>
-                                    </button>
-                                </security:authorize>
-
-                                <a class="btn btn-xs btn-info" title="Sửa thông tin" href="/admin/installment-edit-${tableList.id}" >
-                                    <i class="ace-icon fa fa-pencil bigger-120"></i>
-                                </a>
-                                <security:authorize access="hasRole('MANAGER')">
-                                    <button class="btn btn-xs btn-danger" title="Xóa khách hàng" onclick="deleteCustomer(${tableList.id})">
-                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                                    </button>
-                                </security:authorize>
-
-
-                            </display:column>
                         </display:table>
                     </div>
                     <%--<display:table id="tableList" style="margin: 3em 0 0em;" class="table table-striped table-bordered table-hover">--%>

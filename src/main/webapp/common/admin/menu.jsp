@@ -115,6 +115,15 @@
                         <b class="arrow"></b>
                     </li>
                 </ul>
+                <ul class="submenu">
+                    <li class="">
+                        <a href='/admin/installment-group-by-customer-list'>
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            Danh sách khách hàng trả góp
+                        </a>
+                        <b class="arrow"></b>
+                    </li>
+                </ul>
             </li>
         </ul>
 

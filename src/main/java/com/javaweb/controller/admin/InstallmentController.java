@@ -36,6 +36,7 @@ public class InstallmentController {
         nav.addObject("installmentEdit",installmentDTO);
         return nav;
     }
+
     @GetMapping(value = "admin/installment-edit")
     public ModelAndView installmentEdit (@ModelAttribute("installmentEdit") InstallmentCreationDTO installmentCreationDTO, HttpServletRequest request){
         ModelAndView mav = new ModelAndView("admin/installment/edit");
@@ -43,6 +44,8 @@ public class InstallmentController {
         mav.addObject("id", null);
         return mav;
     }
+
+    //GET Installment list
     @RequestMapping(value = "admin/installment-list", method = RequestMethod.GET)
     public ModelAndView installmentList(@ModelAttribute(SystemConstant.MODEL) Installment_Building_UserDto model, HttpServletRequest request) {
         System.out.println("Hello world");
@@ -59,6 +62,33 @@ public class InstallmentController {
         List<Installment_Building_UserDto> news = installmentService.findAllInstallments();
         System.out.println("news: " + news);
         System.out.println("so luong" + news.size());
+
+        //Đổ data vào dto
+        model.setListResult(news);
+
+        //Đổ tổng số installments vào dto
+        //model.setTotalItems(installmentService.countTotalItems());
+        mav.addObject(SystemConstant.MODEL, model);
+        initMessageResponse(mav, request);
+        return mav;
+    }
+
+    //GET Installment Group By Customer
+    //GET Installment list
+    @RequestMapping(value = "admin/installment-group-by-customer-list", method = RequestMethod.GET)
+    public ModelAndView installmentGroupByCustomerList(@ModelAttribute(SystemConstant.MODEL) InstallmentGroupByCustomerDTO model, HttpServletRequest request) {
+        System.out.println("Hello world");
+
+        //Lấy ra view cần hiển thị
+        ModelAndView mav = new ModelAndView("admin/installment/list-group-by-customer");
+
+        //Cái này k biết là cái gì, mà cứ cop đại cho tất cả cái tương tự đi
+        DisplayTagUtils.of(request, model);
+
+        //Lấy dữ liệu từ service
+
+        //Lấy ra danh sách các installments
+        List<InstallmentGroupByCustomerDTO> news = installmentService.findInstallmentGroupByCustomer();
 
         //Đổ data vào dto
         model.setListResult(news);

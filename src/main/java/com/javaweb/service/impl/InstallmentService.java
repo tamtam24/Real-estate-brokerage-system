@@ -6,6 +6,7 @@ import com.javaweb.entity.InstallmentEntity;
 import com.javaweb.entity.UserEntity;
 import com.javaweb.model.dto.InstallmentCreationDTO;
 import com.javaweb.model.dto.InstallmentDTO;
+import com.javaweb.model.dto.InstallmentGroupByCustomerDTO;
 import com.javaweb.model.dto.Installment_Building_UserDto;
 import com.javaweb.repository.AssignmentInstallmentRepository;
 import com.javaweb.repository.BuildingRepository;
@@ -20,6 +21,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -123,5 +125,10 @@ public class InstallmentService implements IInstallmentService {
         InstallmentEntity installmentEntity = installmentRepository.findById(id).get();
         InstallmentDTO installmentDTO = modelMapper.map(installmentEntity, InstallmentDTO.class);
         return installmentDTO;
+    }
+
+    @Override
+    public List<InstallmentGroupByCustomerDTO> findInstallmentGroupByCustomer() {
+        return installmentRepository.findInstallmentGroupByCustomer();
     }
 }
