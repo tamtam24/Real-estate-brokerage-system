@@ -34,10 +34,16 @@ public class HomeController {
     private com.javaweb.service.IBuildingService IBuildingService;
 
     @RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
-    public ModelAndView homePage(BuildingSearchRequest buildingSearchRequest, HttpServletRequest request) {
+    public ModelAndView homePage(@ModelAttribute(SystemConstant.MODEL) BuildingSearchRequest buildingSearchRequest, HttpServletRequest request) {
         ModelAndView mav = new ModelAndView("web/home");
         mav.addObject("modelSearch", buildingSearchRequest);
         mav.addObject("districts", DistrictCode.type());
+        List<BuildingSearchResponse> responseList = new ArrayList<>();
+        DisplayTagUtils.of(request, buildingSearchRequest);
+        responseList = IBuildingService.findAll(buildingSearchRequest, PageRequest.of(buildingSearchRequest.getPage() - 1, buildingSearchRequest.getMaxPageItems()));
+        buildingSearchRequest.setListResult(responseList);
+        buildingSearchRequest.setTotalItems(IBuildingService.countTotalItem());
+        mav.addObject("buildingList", buildingSearchRequest);
         return mav;
     }
 
