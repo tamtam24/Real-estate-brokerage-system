@@ -5,8 +5,6 @@
 - [Tính Năng](#tính-năng)
 - [Công Nghệ](#công-nghệ)
 - [Cài Đặt](#cài-đặt)
-- [Sử Dụng](#sử-dụng)
-- [Cấu Hình Cơ Sở Dữ Liệu](#cấu-hình-cơ-sở-dữ-liệu)
 - [Những Người Đóng Góp](#những-người-đóng-góp)
 - [Lời Cảm Ơn](#lời-cảm-ơn)
 
@@ -34,3 +32,16 @@ Dự án này là hệ thống quản lý bất động sản được phát tri
    ```bash
    git clone https://github.com/tamtam24/real-estate-management.git
    cd real-estate-management
+
+2. **Cấu Hình Cơ Sở Dữ Liệu:** Thiết lập cơ sở dữ liệu MySQL. Sử dụng các script SQL được cung cấp để tạo các bảng cần thiết và dữ liệu ban đầu.
+3. **Xây Dựng Dự Án:** Đảm bảo bạn đã cài đặt Java 18, Tomcat và một IDE phù hợp (như IntelliJ IDEA hoặc Eclipse). Mở dự án trong IDE của bạn và xây dựng nó.
+4. **Chạy Ứng Dụng:** Chạy file chính của ứng dụng để khởi động máy chủ. Truy cập ứng dụng thông qua trình duyệt web tại cổng localhost được chỉ định.
+
+## Những người đóng góp
+- **Đặng Lê Thành Tâm** - 22521290
+- **Hà Phú Thịnh** - 22521405
+- **Nguyễn Huỳnh Duy Hiếu**  - 22520439
+- **Hoàng Đinh Trung** - 22521554
+
+## Lời cảm ơn
+Chúng tôi xin bày tỏ lòng biết ơn sâu sắc tới giảng viên Ths. Tạ Việt Vương vì sự hướng dẫn và hỗ trợ vô giá của ông trong suốt dự án này. Ngoài ra, chúng tôi cảm ơn các bạn cùng lớp và khoa tại Đại học Công nghệ Thông tin vì những đóng góp và phản hồi của họ.
