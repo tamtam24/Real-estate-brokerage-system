@@ -55,8 +55,8 @@ public class InstallmentRepositoryImpl implements InstallmentRepositoryCustom {
                 "WHERE a_i.installmentid = i.id\n" +
                 "AND i.is_active = 1\n" +
                 "AND a_i.buildingid = b.id\n" +
-                "AND a_i.staffid = st.id"+
-                "AND a_i.userid = "+userId;
+                " AND a_i.staffid = st.id "+
+                " AND a_i.userid = us.id AND a_i.userid="+userId;
         Query query = entityManager.createNativeQuery(sql, AssignmentInstallmentEntity.class);
         return (List<AssignmentInstallmentEntity>) query.getResultList();
     }

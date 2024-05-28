@@ -83,35 +83,11 @@
     <div class="search">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-3 search-item">
-                    <p class="search-text">Chọn tỉnh/thành phố</p>
-                    <select class="search-option" name="search-option" id="search-option">
-                        <option value>- Tỉnh/thành phố</option>
-                        <option value="">TP.Đà Nẵng</option>
-                        <option value="">TP.Hồ Chí Minh</option>
-                        <option value="">TP.Hà Nội</option>
-                        <option value="">TP.Cần Thơ</option>
-                    </select>
-                </div>
-                <div class="col-12 col-md-3 search-item">
-                    <p class="search-text">Chọn quận/huyện</p>
-                    <select class="search-option" name="search-option" id="search-option">
-                        <option value>- Quận/huyện</option>
-                    </select>
-                </div>
 
-                <div class="col-12 col-md-3 search-item">
-                    <p class="search-text">Chọn loại bất động sản</p>
-                    <select class="search-option" name="search-option" id="search-option">
-                        <option value>- Loại bất động sản</option>
-                    </select>
-                </div>
-                <div class="col-12 col-md-3 search-btn">
-                    <button class="search-btn-text pb-0">
-                        <i class="fa-solid fa-magnifying-glass search-btn-icon"></i>
-                        <span>Tìm kiếm nhanh</span>
-                    </button>
-                </div>
+
+
+
+
             </div>
         </div>
     </div>
