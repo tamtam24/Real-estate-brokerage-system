@@ -89,31 +89,22 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div><img
-                                    src="https://bizweb.dktcdn.net/100/328/362/themes/894751/assets/slider_1.png?1676257083798"
+                                    src="https://media.tapchitaichinh.vn/images/upload/hoangthuviet/04202019/bat-dong-san.jpg"
                                     alt="">
                             </div>
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <%--<div class="carousel-item">
                             <div class="img-slideshow"><img
                                     src="https://media.tapchitaichinh.vn/images/upload/hoangthuviet/04202019/bat-dong-san.jpg"
                                     alt=""></div>
-                            <div class="carousel-caption d-none d-md-block">
-                                <!-- <h5>Cho thuê căn hộ chung cư Saigon Mia</h5>
-                                <p>. Dự án cho thuê căn hộ chung cư Saigon Mia là dự án được sử dụng dành cho các
-                                    khách hàng thành đạt với sở thích và mong muốn được sống trong môi trường có
-                                    nguồn không khí trong lành</p> -->
-                            </div>
-                        </div>
+                            <div class="carousel-caption d-none d-md-block"></div>
+                        </div>--%>
                         <div class="carousel-item">
                             <img src="https://richnguyen.vn/wp-content/uploads/2020/08/buc-anh-bat-dong-san-dep-2.jpg"
                                  alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <!-- <h5>Dự án Chung cư Hòa Khánh Liên Chiểu Đà Nẵng</h5>
-                                <p>Dự án xây dựng nhằm đáp ứng nhu cầu về nhà ở cho cán bộ, công nhân viên chức, các
-                                    đối tượng chính sách xã hội có thu nhập thấp</p> -->
-                            </div>
+                            <div class="carousel-caption d-none d-md-block"></div>
                         </div>
                     </div>
                 </div>
@@ -158,7 +149,7 @@
                                         </div>
                                         <div class="product1-footer">
                                             <span class="product1-footer-cost">${building.rentPrice} Tỷ</span>
-                                            <button class="product1-footer-detail"><a href="./ChiTiet.html"
+                                            <button class="product1-footer-detail"><a href="lien-he"
                                                                                       style="color:#fff">Xem chi
                                                 tiết</a></button>
                                         </div>
@@ -178,7 +169,7 @@
                     <div class="col-12 col-md-12">
                         <div class="title_module_main a-center text-center">
                             <h2 style="margin-bottom: 15px;"><span>Vì sao bạn chọn bất động sản
-                                        SkyLand ?</span>
+                                        360 ?</span>
                             </h2>
                             <p style="margin-bottom: 30px;">Chúng tôi cung cấp đầy đủ và chính xác
                                 nhất thông tin
@@ -359,7 +350,7 @@
 
                                     <div class="product1-footer">
                                         <span class="product1-footer-cost">${building.rentPrice} Tỷ</span>
-                                        <button class="product1-footer-detail"><a href="./ChiTiet.html"
+                                        <button class="product1-footer-detail"><a href="lien-he"
                                                                                   style="color:#fff">Xem chi
                                             tiết</a></button>
                                     </div>
@@ -412,9 +403,7 @@
             <div class="container-fluid">
                 <div class="top-footer text-center mt-0">
                     <div class="logo logo-footer pt-5">
-                        <a ><img
-                                src="https://bizweb.dktcdn.net/100/328/362/themes/894751/assets/logo_footer.png?1676257083798"
-                                alt="logo-footer"></a>
+
 
                         <div class="item-footer mt-5">
                             <div class="row">
